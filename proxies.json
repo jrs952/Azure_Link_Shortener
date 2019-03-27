@@ -6,14 +6,14 @@
           "methods": ["POST"],
           "route": "/GetLink"
         },
-        "backendUri": "https://szylink.azurewebsites.net/api/LinkIngest"
+        "backendUri": "https://address.azurewebsites.net/api/LinkIngest"
       },
       "t" : {
         "matchCondition": {
           "methods": ["GET"],
           "route": "/t/{u}"
         },
-        "backendUri": "https://szylink.azurewebsites.net/api/LinkRedirect?u={u}"
+        "backendUri": "https://address.azurewebsites.net/api/LinkRedirect?u={u}"
       }
 
   }
