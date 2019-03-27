@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json.schemastore.org/proxies",
+  "proxies": {
+      "inbound": {
+        "matchCondition": {
+          "methods": ["POST"],
+          "route": "/GetLink"
+        },
+        "backendUri": "https://szylink.azurewebsites.net/api/LinkIngest"
+      },
+      "t" : {
+        "matchCondition": {
+          "methods": ["GET"],
+          "route": "/t/{u}"
+        },
+        "backendUri": "https://szylink.azurewebsites.net/api/LinkRedirect?u={u}"
+      }
+
+  }
+}
